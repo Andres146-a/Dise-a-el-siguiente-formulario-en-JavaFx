@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AllControlsController">
+    <children>
+        <Label fx:id="labelNombre" layoutX="20.0" layoutY="15.0" text="Nombre:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="15.0"/>
+        <TextField fx:id="textFieldNombre" layoutX="100.0" layoutY="10.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="10.0"/>
+        <Label fx:id="labelApellido" layoutX="20.0" layoutY="50.0" text="Apellido:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="50.0"/>
+        <TextField fx:id="textFieldApellido" layoutX="100.0" layoutY="45.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="45.0"/>
+        <Label fx:id="labelEmail" layoutX="20.0" layoutY="85.0" text="Email:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="85.0"/>
+        <TextField fx:id="textFieldEmail" layoutX="100.0" layoutY="80.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="80.0"/>
+        <Label fx:id="labelContraseña" layoutX="20.0" layoutY="120.0" text="Contraseña:" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="120.0"/>
+        <PasswordField fx:id="passwordFieldContraseña" layoutX="100.0" layoutY="115.0" prefWidth="200.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="115.0"/>
+        
+        <HBox layoutX="20.0" layoutY="160.0" spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="160.0">
+            <CheckBox fx:id="checkBoxTerminos" text="Acepto los términos y condiciones"/>
+            <Hyperlink fx:id="hyperlinkTerminos" text="Términos y condiciones"/>
+        </HBox>
+        
+        <ToggleButton fx:id="toggleButtonEstado" layoutX="20.0" layoutY="200.0" text="Activado" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="200.0"/>
+        <RadioButton fx:id="radioButtonMasculino" layoutX="100.0" layoutY="240.0" text="Masculino" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="240.0"/>
+        <RadioButton fx:id="radioButtonFemenino" layoutX="180.0" layoutY="240.0" text="Femenino" AnchorPane.leftAnchor="180.0" AnchorPane.topAnchor="240.0"/>
+        <Label fx:id="labelInformacion" layoutX="20.0" layoutY="280.0" text="" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="280.0"/>
+        <TextArea fx:id="textAreaComentarios" layoutX="100.0" layoutY="275.0" prefHeight="100.0" prefWidth="200.0" wrapText="true" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="275.0"/>
+        
+        <!-- Usando un VBox para mantener las barras de progreso y el botón de enviar fijo -->
+        <VBox layoutX="290.0" layoutY="200.0" spacing="10.0" AnchorPane.rightAnchor="20.0" AnchorPane.bottomAnchor="200.0">
+            <ProgressIndicator fx:id="progressIndicator" progress="0.5"/>
+            <ProgressBar fx:id="progressBar" prefWidth="200.0" progress="0.7"/>
+            <Button fx:id="buttonEnviar" text="Enviar"/>
+        </VBox>
+        
+        <Slider fx:id="sliderValor" layoutX="20.0" layoutY="430.0" max="100.0" min="0.0" value="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="20.0"/>
+    </children>
+</AnchorPane>
